@@ -1,0 +1,12 @@
+/* universal styling */
+* {
+  margin: 0;
+  padding: 0;
+ 
+  box-sizing: border-box;
+}
+body{
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #fff;
+    color: #151515;
+}
