@@ -41,10 +41,10 @@ nav i{
 nav ul{
   display: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 5px;
   align-items: center;
-  width: 300px;
+  width: 200px;
   height: 100px;
   background: #fff;
   position: absolute;
