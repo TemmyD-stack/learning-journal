@@ -1,18 +1,3 @@
-import data from './data.js';
-
-const blogContainer = document.getElementById("blog-posts-container");
-
-// copyright is here
-const copyRightEl = document.getElementById("copyright");
-const year = new Date().getFullYear();
-copyRightEl.innerHTML = `Copyright &copy; ${year}`;
-
-// date is here
-const dateEl = document.getElementById("date");
-let date = new Date();
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-dateEl.innerText = date.toLocaleDateString('en-US', options);
-
 // hamburger is here
 const hamburger = document.getElementById("menu-toggle");
 hamburger.innerHTML = `<i class="fa-solid fa-bars"></i>`; // default icon
@@ -30,9 +15,14 @@ hamburger.addEventListener("click", () => {
     
     
 })
+
+// blog post is here
+import data from '../data.js';
+
+const blogContainer = document.getElementById("blog-posts-container");
 // blog posts are here 
 data.forEach((blog) => {
-    if(blog.id > 6) return; // Limit to 6 blogs
+    if(blog.id > 3) return; // Limit to 6 blogs
     blogContainer.innerHTML += 
     `
         <div class="blog-card">
@@ -45,3 +35,8 @@ data.forEach((blog) => {
         </div>
     `
 })
+
+// copyright is here
+const copyRightEl = document.getElementById("copyright");
+const year = new Date().getFullYear();
+copyRightEl.innerHTML = `Copyright &copy; ${year}`;
