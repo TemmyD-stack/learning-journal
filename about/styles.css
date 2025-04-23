@@ -187,6 +187,7 @@ article{
       display: flex;
       flex-direction: row;
       gap: 5px;
+      width: max-content;
       height: max-content;
       align-items: center;
       position: static;

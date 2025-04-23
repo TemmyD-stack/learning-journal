@@ -52,7 +52,7 @@ nav ul{
   flex-direction: column;
   gap: 5px;
   align-items: center;
-  /* width: 200px; */
+  width: 200px;
   height: 300px;
   background: #fff;
   position: absolute;
@@ -175,6 +175,7 @@ footer{
     height: max-content;
     align-items: center;
     position: static;
+    width: max-content;
   }
   nav li a{
     padding: 0 .5em 0 .3em;
